@@ -1,0 +1,135 @@
+{
+  "kind": "url",
+  "model_name": "GradientBoosting",
+  "feature_names": [
+    "url_length",
+    "host_length",
+    "path_length",
+    "query_length",
+    "path_depth",
+    "num_dots",
+    "num_hyphens",
+    "num_underscores",
+    "num_digits",
+    "digit_ratio",
+    "num_special_chars",
+    "num_percent",
+    "num_params",
+    "has_at_symbol",
+    "has_ip_host",
+    "has_port",
+    "has_scheme",
+    "uses_https",
+    "num_subdomains",
+    "hyphen_in_host",
+    "digits_in_host",
+    "suspicious_words_host",
+    "suspicious_words_path",
+    "has_shortener",
+    "has_punycode",
+    "suspicious_tld",
+    "brand_mismatch",
+    "embedded_url_in_path",
+    "host_entropy"
+  ],
+  "metrics": {
+    "test": {
+      "n": 240,
+      "accuracy": 0.9875,
+      "precision": 0.9836,
+      "recall": 0.9917,
+      "f1": 0.9877,
+      "roc_auc": 0.9987,
+      "false_positive_rate": 0.0168,
+      "confusion_matrix": [
+        [
+          117,
+          2
+        ],
+        [
+          1,
+          120
+        ]
+      ]
+    },
+    "validation": {
+      "RandomForest": {
+        "n": 238,
+        "accuracy": 0.9748,
+        "precision": 0.975,
+        "recall": 0.975,
+        "f1": 0.975,
+        "roc_auc": 0.9988,
+        "false_positive_rate": 0.0254,
+        "confusion_matrix": [
+          [
+            115,
+            3
+          ],
+          [
+            3,
+            117
+          ]
+        ]
+      },
+      "GradientBoosting": {
+        "n": 238,
+        "accuracy": 0.9748,
+        "precision": 0.9672,
+        "recall": 0.9833,
+        "f1": 0.9752,
+        "roc_auc": 0.9987,
+        "false_positive_rate": 0.0339,
+        "confusion_matrix": [
+          [
+            114,
+            4
+          ],
+          [
+            2,
+            118
+          ]
+        ]
+      }
+    },
+    "n_train": 1109,
+    "n_val": 238,
+    "n_test": 240
+  },
+  "feature_importance": {
+    "brand_mismatch": 0.41923722260944823,
+    "num_subdomains": 0.12687787015781501,
+    "path_length": 0.10716004543098252,
+    "host_length": 0.10502340086764532,
+    "suspicious_words_host": 0.07448410404728052,
+    "has_shortener": 0.03783065230047552,
+    "digit_ratio": 0.029341613862477866,
+    "num_dots": 0.02617942949913435,
+    "uses_https": 0.011071795066570602,
+    "url_length": 0.010356443927386211,
+    "num_underscores": 0.00963590308373404,
+    "num_digits": 0.008638564490482266,
+    "suspicious_words_path": 0.007864936997942983,
+    "host_entropy": 0.006303097207220925,
+    "suspicious_tld": 0.005974104440199274,
+    "path_depth": 0.0044791639580729166,
+    "hyphen_in_host": 0.003524930628187561,
+    "num_hyphens": 0.0016967985920595123,
+    "has_ip_host": 0.0011553461406030442,
+    "has_scheme": 0.0009937272892514722,
+    "digits_in_host": 0.0009879960030957573,
+    "query_length": 0.000568441438582325,
+    "has_at_symbol": 0.00032078378106516534,
+    "num_params": 0.0002744053036070671,
+    "num_special_chars": 1.9222876679673866e-05,
+    "num_percent": 0.0,
+    "has_port": 0.0,
+    "has_punycode": 0.0,
+    "embedded_url_in_path": 0.0
+  },
+  "data_sources": [
+    "SYNTHETIC"
+  ],
+  "is_synthetic": true,
+  "trained_at": "2026-11-13T09:56:38"
+}

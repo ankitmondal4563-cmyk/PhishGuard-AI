@@ -1,0 +1,170 @@
+{
+  "kind": "text",
+  "model_name": "TF-IDF + LogisticRegression (C=0.3)",
+  "metrics": {
+    "test": {
+      "n": 263,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0,
+      "false_positive_rate": 0.0,
+      "confusion_matrix": [
+        [
+          129,
+          0
+        ],
+        [
+          0,
+          134
+        ]
+      ]
+    },
+    "per_channel": {
+      "email": {
+        "n": 103,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "roc_auc": 1.0,
+        "false_positive_rate": 0.0,
+        "confusion_matrix": [
+          [
+            50,
+            0
+          ],
+          [
+            0,
+            53
+          ]
+        ]
+      },
+      "message": {
+        "n": 74,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "roc_auc": 1.0,
+        "false_positive_rate": 0.0,
+        "confusion_matrix": [
+          [
+            36,
+            0
+          ],
+          [
+            0,
+            38
+          ]
+        ]
+      },
+      "sms": {
+        "n": 86,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "roc_auc": 1.0,
+        "false_positive_rate": 0.0,
+        "confusion_matrix": [
+          [
+            43,
+            0
+          ],
+          [
+            0,
+            43
+          ]
+        ]
+      }
+    },
+    "validation": {
+      "0.3": {
+        "n": 260,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "roc_auc": 1.0,
+        "false_positive_rate": 0.0,
+        "confusion_matrix": [
+          [
+            128,
+            0
+          ],
+          [
+            0,
+            132
+          ]
+        ]
+      },
+      "1.0": {
+        "n": 260,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "roc_auc": 1.0,
+        "false_positive_rate": 0.0,
+        "confusion_matrix": [
+          [
+            128,
+            0
+          ],
+          [
+            0,
+            132
+          ]
+        ]
+      },
+      "3.0": {
+        "n": 260,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "roc_auc": 1.0,
+        "false_positive_rate": 0.0,
+        "confusion_matrix": [
+          [
+            128,
+            0
+          ],
+          [
+            0,
+            132
+          ]
+        ]
+      },
+      "10.0": {
+        "n": 260,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "roc_auc": 1.0,
+        "false_positive_rate": 0.0,
+        "confusion_matrix": [
+          [
+            128,
+            0
+          ],
+          [
+            0,
+            132
+          ]
+        ]
+      }
+    },
+    "n_train": 1211,
+    "n_val": 260,
+    "n_test": 263
+  },
+  "data_sources": [
+    "SYNTHETIC"
+  ],
+  "is_synthetic": true,
+  "trained_at": "2026-11-13T09:56:39"
+}
